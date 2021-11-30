@@ -1,6 +1,6 @@
 import './App.css'
-import InputField from './components/InputField'
-import Character from './components/Character'
+import InputField from './components/inputField/InputField'
+import Character from './components/character/Character'
 
 function App() {
   return (

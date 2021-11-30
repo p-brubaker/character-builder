@@ -1,0 +1,32 @@
+.character {
+  display: grid;
+  grid-template-rows: 1.5fr 1fr 2fr;
+  height: 700px;
+  width: 200px;
+}
+
+.character-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.head {
+  background-image: url('../../images/duck-head.png');
+}
+
+.middle {
+  background-image: url('../../images/blue-middle.png');
+}
+
+.bottom {
+  background-image: url('../../images/blue-pants.png');
+}

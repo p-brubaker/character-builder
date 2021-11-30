@@ -9,3 +9,16 @@ body {
   background-image: url('./assets/bg.jpeg');
   background-size: 400px;
 }
+
+p {
+  margin: var(--gutter);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.gutter-right {
+  margin-right: 20px;
+}
