@@ -10,8 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <InputField head={head} setHead={setHead} />
-      <Character
+      <InputField
         head={head}
         setHead={setHead}
         middle={middle}
@@ -19,6 +18,7 @@ function App() {
         bottom={bottom}
         setBottom={setBottom}
       />
+      <Character head={head} middle={middle} bottom={bottom} />
     </div>
   )
 }
