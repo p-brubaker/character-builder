@@ -12,6 +12,7 @@ function App() {
 
   const updateCatchphrases = (newCatchphrase) => {
     setCatchphrases((prev) => [...prev, newCatchphrase])
+    setCatchphrasesInput('')
   }
 
   return (

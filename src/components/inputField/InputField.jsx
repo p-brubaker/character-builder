@@ -11,6 +11,7 @@ function InputField(props) {
     setMiddle,
     bottom,
     setBottom,
+    catchphrases,
     catchphrasesInput,
     setCatchphrasesInput,
     updateCatchphrases,
@@ -55,7 +56,11 @@ function InputField(props) {
         You have changed the head {0} times, the body {0} times, and the pants {0} times. And nobody
         can forget your characters classic catchphrases:
       </p>
-      <div className="catchphrases-display">Catchphrases go here</div>
+      <div className="catchphrases-display">
+        {catchphrases.map((phrase) => (
+          <p key={phrase}>{phrase}</p>
+        ))}
+      </div>
     </div>
   )
 }
