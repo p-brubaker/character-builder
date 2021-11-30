@@ -18,15 +18,3 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.head {
-  background-image: url('../../images/duck-head.png');
-}
-
-.middle {
-  background-image: url('../../images/blue-middle.png');
-}
-
-.bottom {
-  background-image: url('../../images/blue-pants.png');
-}

@@ -4,7 +4,18 @@ import Dropdown from '../dropdown/Dropdown'
 import './InputField.css'
 
 function InputField(props) {
-  const { head, setHead, middle, setMiddle, bottom, setBottom } = props
+  const {
+    head,
+    setHead,
+    middle,
+    setMiddle,
+    bottom,
+    setBottom,
+    catchphrasesInput,
+    setCatchphrasesInput,
+    updateCatchphrases,
+  } = props
+
   return (
     <div className="input-field">
       <div className="picker">
@@ -29,8 +40,16 @@ function InputField(props) {
       </div>
       <div>
         <label htmlFor="catchphrases-input">Add a catch phrase</label>
-        <input type="text" name="catchphrases-input" id="catchphrases-input" />
-        <button type="submit">Add</button>
+        <input
+          type="text"
+          value={catchphrasesInput}
+          onChange={(e) => setCatchphrasesInput(e.target.value)}
+          name="catchphrases-input"
+          id="catchphrases-input"
+        />
+        <button type="submit" onClick={() => updateCatchphrases(catchphrasesInput)}>
+          Add
+        </button>
       </div>
       <p className="report">
         You have changed the head {0} times, the body {0} times, and the pants {0} times. And nobody
