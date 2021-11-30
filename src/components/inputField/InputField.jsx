@@ -32,7 +32,7 @@ function InputField(props) {
           onChange={setMiddle}
         />
         <Dropdown
-          options={['White Pants', 'Blue Jeans', 'Single Leg']}
+          options={['White', 'Blue', 'Leg']}
           label="Bottom"
           value={bottom}
           onChange={setBottom}
