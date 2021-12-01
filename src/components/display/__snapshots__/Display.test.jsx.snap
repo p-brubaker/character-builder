@@ -10,11 +10,17 @@ exports[`should render the Display component 1`] = `
     >
       You have changed the head 
       0
-       times, the body 
-      3
-       times, and the pants 
-      2
-       times. And nobody can forget your characters classic catchphrases:
+       time
+      s
+      , the body
+       3
+       time
+      s
+      , and the pants
+       2 
+      time
+      s
+      . And nobody can forget your characters classic catchphrases:
     </p>
     <div
       class="catchphrases-display"
