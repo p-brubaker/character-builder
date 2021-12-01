@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the Character component 1`] = `
+<div>
+  <div
+    class="character-container"
+  >
+    <div
+      class="character"
+    >
+      <div
+        class="bg head"
+        style="background-image: url(assets/bird-head.png);"
+      />
+      <div
+        class="bg middle"
+        style="background-image: url(assets/fancy-middle.png);"
+      />
+      <div
+        class="bg bottom"
+        style="background-image: url(assets/white-pants.png);"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the Display component 1`] = `
+<div>
+  <div
+    class="display"
+  >
+    <p
+      class="report"
+    >
+      You have changed the head 
+      0
+       times, the body 
+      3
+       times, and the pants 
+      2
+       times. And nobody can forget your characters classic catchphrases:
+    </p>
+    <div
+      class="catchphrases-display"
+    >
+      <p>
+        Okey-Dokey
+      </p>
+      <p>
+        Well, I suppose...
+      </p>
+    </div>
+  </div>
+</div>
+`;
