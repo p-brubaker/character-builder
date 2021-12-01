@@ -5,9 +5,9 @@ import Display from './components/display/Display'
 import { useState } from 'react'
 
 function App() {
-  const [head, setHead] = useState('')
-  const [middle, setMiddle] = useState('')
-  const [bottom, setBottom] = useState('')
+  const [head, setHead] = useState('Dog')
+  const [middle, setMiddle] = useState('Fancy')
+  const [bottom, setBottom] = useState('Blue')
   const [catchphrases, setCatchphrases] = useState([])
   const [catchphrasesInput, setCatchphrasesInput] = useState('')
   const [report, setReport] = useState({ Head: 0, Middle: 0, Bottom: 0 })
