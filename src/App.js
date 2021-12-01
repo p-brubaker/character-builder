@@ -33,10 +33,9 @@ function App() {
           head={head}
           middle={middle}
           bottom={bottom}
-          catchphrases={catchphrases}
+          catchphrasesInput={catchphrasesInput}
           handleSelect={handleSelect}
           updateCatchphrases={updateCatchphrases}
-          catchphrasesInput={catchphrasesInput}
           setCatchphrasesInput={setCatchphrasesInput}
         />
         <Display report={report} catchphrases={catchphrases} />
