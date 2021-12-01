@@ -22,4 +22,5 @@ function Character({ head, middle, bottom }) {
     </div>
   )
 }
+
 export default Character

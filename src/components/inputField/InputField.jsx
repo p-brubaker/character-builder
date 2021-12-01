@@ -1,18 +1,14 @@
 /* eslint-disable indent */
 import React from 'react'
-import Dropdown from '../dropdown/Dropdown'
 import './InputField.css'
 
 function InputField(props) {
   const {
     head,
-    setHead,
     middle,
-    setMiddle,
     bottom,
-    setBottom,
-    catchphrases,
     catchphrasesInput,
+    handleSelect,
     setCatchphrasesInput,
     updateCatchphrases,
   } = props
@@ -20,24 +16,44 @@ function InputField(props) {
   return (
     <div className="input-field">
       <div className="picker">
-        <Dropdown
-          options={['Duck', 'Dog', 'Bird', 'Horse']}
-          label="Head"
-          value={head}
-          onChange={setHead}
-        />
-        <Dropdown
-          options={['Fancy', 'Pink', 'Red', 'Blue']}
-          label="Middle"
-          value={middle}
-          onChange={setMiddle}
-        />
-        <Dropdown
-          options={['White', 'Blue', 'Leg']}
-          label="Bottom"
-          value={bottom}
-          onChange={setBottom}
-        />
+        <label htmlFor="Head">
+          Head
+          <select value={head} name="Head" onChange={(e) => handleSelect(e.target.value, 'Head')}>
+            {['Duck', 'Dog', 'Bird', 'Horse'].map((choice) => (
+              <option value={choice} key={choice}>
+                {choice}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label htmlFor="Middle">
+          Middle
+          <select
+            value={middle}
+            name="Middle"
+            onChange={(e) => handleSelect(e.target.value, 'Middle')}
+          >
+            {['Fancy', 'Pink', 'Red', 'Blue'].map((choice) => (
+              <option value={choice} key={choice}>
+                {choice}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label htmlFor="Bottom">
+          Bottom
+          <select
+            value={bottom}
+            name="Bottom"
+            onChange={(e) => handleSelect(e.target.value, 'Bottom')}
+          >
+            {['White', 'Blue', 'Leg'].map((choice) => (
+              <option value={choice} key={choice}>
+                {choice}
+              </option>
+            ))}
+          </select>
+        </label>
       </div>
       <div>
         <label htmlFor="catchphrases-input">Add a catch phrase</label>
@@ -51,15 +67,6 @@ function InputField(props) {
         <button type="submit" onClick={() => updateCatchphrases(catchphrasesInput)}>
           Add
         </button>
-      </div>
-      <p className="report">
-        You have changed the head {0} times, the body {0} times, and the pants {0} times. And nobody
-        can forget your characters classic catchphrases:
-      </p>
-      <div className="catchphrases-display">
-        {catchphrases.map((phrase) => (
-          <p key={phrase}>{phrase}</p>
-        ))}
       </div>
     </div>
   )
